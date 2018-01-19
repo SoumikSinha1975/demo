@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+   application :
+        image: unicef/indiaapp
+        ports:
+            - "8000:8000"
+        depends_on:
+            - database
+   database:
+        image: unicef/india:soumik
